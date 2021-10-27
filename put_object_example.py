@@ -37,10 +37,10 @@ client = boto3.client(
 test = b'test stuffs'
 
 resp = client.put_object(
-	ACL=acl, 				# access control
-	Body = test, 			# actual file to send
-	Bucket=buk, 			# bucket name
-	BucketKeyEnabled=False, # disable encryption
-	Key = key 				# file location + name
+	ACL=acl,				# access control
+	Body = test,			# actual file to send
+	Bucket=buk,				# bucket name
+	BucketKeyEnabled=False,	# disable encryption
+	Key = key				# file location + name
 )
 
